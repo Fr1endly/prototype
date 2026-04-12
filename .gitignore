@@ -33,3 +33,5 @@ pnpm-debug.log*
 # macOS
 .AppleDouble
 .LSOverride
+
+plan.md
