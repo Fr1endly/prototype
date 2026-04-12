@@ -1,0 +1,142 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+---
+
+<Layout title="About | Inspirit Lactation" activePage="about">
+
+  <!-- ───── PAGE HERO BANNER ───── -->
+  <section class="bg-sand/40 border-b border-sand">
+    <div class="max-w-5xl mx-auto px-6 py-16 text-center">
+      <p class="font-body text-xs tracking-[0.35em] uppercase text-sage mb-3 reveal visible">Meet your consultant</p>
+      <h1 class="font-display text-5xl md:text-6xl font-[300] text-espresso reveal visible" style="transition-delay:0.1s">
+        About Mary See,
+        <span class="italic text-blush">IBCLC, CLE</span>
+      </h1>
+      <div class="mt-5 flex justify-center reveal visible" style="transition-delay:0.2s">
+        <p class="font-display italic text-lg text-espresso/50 font-[300]">
+          Here to support you and your breastfeeding journey
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── MAIN CONTENT ───── -->
+  <section class="max-w-5xl mx-auto px-6 py-20">
+    <div class="grid md:grid-cols-2 gap-16 items-start">
+
+      <!-- LEFT — Portrait + accent -->
+      <div class="flex flex-col items-center gap-8 reveal">
+        <div class="portrait-frame">
+          <img
+            src="https://static.wixstatic.com/media/42dc89_89ce8e393f534346b35dc2ce90b82c4b~mv2.jpg/v1/fill/w_334,h_515,al_c,lg_1,q_80,enc_avif,quality_auto/IMG_0677_edited.jpg"
+            alt="Mary See, IBCLC"
+            class="w-64 md:w-72 object-cover"
+          />
+        </div>
+        <!-- Credentials badge -->
+        <div class="flex flex-col items-center gap-1 text-center">
+          <span class="font-display italic text-2xl text-espresso">Mary See</span>
+          <span class="font-body text-xs tracking-[0.3em] uppercase text-sage">IBCLC · CLE</span>
+          <div class="mt-2 w-8 h-px bg-blush"></div>
+        </div>
+        <!-- Contact nudge -->
+        <a
+          href="mailto:love@maryseeibclc.com"
+          class="w-full max-w-xs text-center border border-blush text-blush text-xs tracking-[0.2em] uppercase px-6 py-3 hover:bg-blush hover:text-cream transition-all duration-300"
+        >
+          Get In Touch
+        </a>
+      </div>
+
+      <!-- RIGHT — Bio & stats -->
+      <div class="flex flex-col gap-8 reveal" style="transition-delay:0.15s">
+
+        <!-- Quote pull -->
+        <blockquote class="border-l-2 border-sage pl-5">
+          <p class="font-display italic text-2xl md:text-3xl font-[300] text-espresso leading-snug">
+            "Your success is my priority!"
+          </p>
+        </blockquote>
+
+        <!-- Bio paragraphs -->
+        <div class="flex flex-col gap-5 text-sm leading-relaxed text-espresso/75 font-[300]">
+          <p>
+            I have been working with Moms and babies since <strong class="font-[500] text-espresso">2007</strong>. I have encountered breastfeeding problems that present themselves anywhere from the first few hours of life to toddlerhood.
+          </p>
+          <p>
+            I breastfed my own children for a combined total of <strong class="font-[500] text-espresso">6 years</strong>. I am passionate about the wellbeing of our planet, your health, and your children's health.
+          </p>
+          <p>
+            That is why I will do everything I can to ensure you meet your personal goals!
+          </p>
+        </div>
+
+        <!-- Stats row
+        <div class="grid grid-cols-3 gap-6 pt-4 border-t border-sand">
+          <div class="stat-card border-blush">
+            <p class="font-display text-3xl font-[300] text-espresso">17<span class="text-blush">+</span></p>
+            <p class="text-xs tracking-widest uppercase text-espresso/50 mt-1 font-[300]">Years<br/>Experience</p>
+          </div>
+          <div class="stat-card border-sage">
+            <p class="font-display text-3xl font-[300] text-espresso">6</p>
+            <p class="text-xs tracking-widest uppercase text-espresso/50 mt-1 font-[300]">Years<br/>Breastfed</p>
+          </div>
+          <div class="stat-card border-sand">
+            <p class="font-display text-3xl font-[300] text-espresso">100<span class="text-blush">%</span></p>
+            <p class="text-xs tracking-widest uppercase text-espresso/50 mt-1 font-[300]">Dedicated<br/>to You</p>
+          </div>
+        </div> -->
+
+        <!-- Services list -->
+        <div class="bg-mist/40 p-6 flex flex-col gap-3">
+          <p class="font-body text-xs tracking-[0.3em] uppercase text-sage mb-1">Available Services</p>
+          <ul class="flex flex-col gap-2 text-sm text-espresso/75 font-[300]">
+            <li class="flex items-center gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-blush flex-shrink-0"></span>
+              In-home visits · Smyrna, GA area
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-blush flex-shrink-0"></span>
+              HIPAA-compliant virtual consultations
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-blush flex-shrink-0"></span>
+              Most insurance companies cover 100% of fees
+            </li>
+          </ul>
+          <a
+            href="https://go.lactationnetwork.com/MarySeeIBCLCCLE"
+            target="_blank"
+            rel="noopener"
+            class="mt-2 inline-flex items-center gap-2 text-blush text-xs tracking-[0.2em] uppercase font-[500] hover:gap-4 transition-all duration-200"
+          >
+            Check Your Insurance Coverage →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── PASSION SECTION ───── -->
+  <section class="bg-sand/40 border-t border-sand">
+    <div class="max-w-5xl mx-auto px-6 py-16">
+      <div class="leaf-divider mb-10 reveal">
+        <span class="font-display italic text-sage text-lg">a personal passion</span>
+      </div>
+      <div class="max-w-2xl mx-auto text-center reveal">
+        <p class="font-display text-2xl md:text-3xl font-[300] italic text-espresso leading-relaxed">
+          "I am passionate about the wellbeing of our planet, your health, and your children's health."
+        </p>
+        <p class="mt-6 text-sm text-espresso/60 font-[300] leading-relaxed">
+          Choosing to breastfeed is one of the most meaningful gifts you can give your child. Mary brings both professional expertise and lived experience to every consultation — ensuring you feel heard, supported, and empowered every step of the way.
+        </p>
+        <a href="mailto:love@maryseeibclc.com" class="mt-8 inline-block bg-espresso text-cream text-xs tracking-[0.25em] uppercase px-8 py-3 hover:bg-blush transition-colors duration-300">
+          Book a Consultation
+        </a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
