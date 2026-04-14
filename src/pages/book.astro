@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+import BookingFlow from '../components/BookingFlow';
+export const prerender = false;
+---
+
+<Layout title="Book | Inspirit Lactation" activePage="book">
+
+  <section class="bg-sand/40 border-b border-sand">
+    <div class="max-w-5xl mx-auto px-6 py-16 text-center">
+      <p class="font-body text-xs tracking-[0.35em] uppercase text-sage mb-3 reveal visible">
+        Schedule your visit
+      </p>
+      <h1 class="font-display text-5xl md:text-6xl font-[300] text-espresso reveal visible" style="transition-delay:0.1s">
+        Book an <span class="italic text-blush">Appointment</span>
+      </h1>
+      <p class="mt-4 font-display italic text-lg text-espresso/50 font-[300] reveal visible" style="transition-delay:0.2s">
+        Choose a service, pick a time, and pay securely
+      </p>
+    </div>
+  </section>
+
+  <section class="max-w-3xl mx-auto px-6 py-16">
+    <BookingFlow client:load />
+  </section>
+
+</Layout>

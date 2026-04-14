@@ -1,0 +1,32 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/global.css';
+---
+
+<Layout title="Booking Confirmed | Inspirit Lactation" activePage="book">
+
+  <section class="max-w-2xl mx-auto px-6 py-24 text-center">
+    <div class="flex items-center justify-center mb-6">
+      <div class="w-16 h-16 rounded-full bg-sage/20 flex items-center justify-center">
+        <svg class="w-8 h-8 text-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+    <h1 class="font-display text-4xl md:text-5xl font-[300] text-espresso mb-4">
+      Booking <span class="italic text-blush">Confirmed!</span>
+    </h1>
+    <p class="text-sm text-espresso/70 font-[300] leading-relaxed mb-8">
+      Thank you for your booking. A confirmation email with all the details has been sent to your inbox. Check your spam folder if you don't see it within a few minutes.
+    </p>
+    <div class="flex flex-wrap items-center justify-center gap-4">
+      <a
+        href="/"
+        class="inline-block border border-blush text-blush text-xs tracking-[0.25em] uppercase px-8 py-3 hover:bg-blush hover:text-cream transition-all duration-300"
+      >
+        Back to Home
+      </a>
+    </div>
+  </section>
+
+</Layout>

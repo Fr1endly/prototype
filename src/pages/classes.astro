@@ -1,0 +1,84 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+import { services } from '../config/services';
+
+const classes = services.filter((s) => s.category === 'class');
+const consultations = services.filter((s) => s.category === 'consultation');
+---
+
+<Layout title="Classes | Inspirit Lactation" activePage="classes">
+
+  <!-- ───── PAGE HERO ───── -->
+  <section class="bg-sand/40 border-b border-sand">
+    <div class="max-w-5xl mx-auto px-6 py-16 text-center">
+      <p class="font-body text-xs tracking-[0.35em] uppercase text-sage mb-3 reveal visible">
+        Empower yourself with knowledge
+      </p>
+      <h1 class="font-display text-5xl md:text-6xl font-[300] text-espresso reveal visible" style="transition-delay:0.1s">
+        Online <span class="italic text-blush">Classes</span>
+      </h1>
+      <p class="mt-4 font-display italic text-lg text-espresso/50 font-[300] reveal visible" style="transition-delay:0.2s">
+        Best taken prenatally — but valuable at any stage of your journey
+      </p>
+    </div>
+  </section>
+
+  <!-- ───── CLASSES GRID ───── -->
+  <section class="max-w-5xl mx-auto px-6 py-20">
+    <div class="leaf-divider mb-10 reveal">
+      <span class="font-display italic text-sage text-lg">classes</span>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      {classes.map((cls) => (
+        <div class="reveal bg-mist/40 p-8 flex flex-col gap-4 hover:-translate-y-1 transition-transform duration-300">
+          <div class="w-10 h-px bg-sage"></div>
+          <h3 class="font-display text-2xl font-[300] text-espresso">{cls.name}</h3>
+          <p class="text-sm leading-relaxed text-espresso/70 font-[300]">{cls.description}</p>
+          <div class="flex items-center gap-4 text-xs text-espresso/50 tracking-widest uppercase">
+            <span>{cls.duration} min</span>
+            <span>·</span>
+            <span class="text-blush font-medium">{cls.priceDisplay}</span>
+          </div>
+          <a
+            href={`/book/?service=${cls.slug}`}
+            class="mt-auto inline-flex items-center gap-2 text-blush text-xs tracking-[0.2em] uppercase font-[500] hover:gap-4 transition-all duration-200"
+          >
+            Book This Class →
+          </a>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ───── CONSULTATIONS ───── -->
+  <section class="bg-sand/50">
+    <div class="max-w-5xl mx-auto px-6 py-20">
+      <div class="leaf-divider mb-10 reveal">
+        <span class="font-display italic text-sage text-lg">consultations</span>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        {consultations.map((svc) => (
+          <div class="reveal bg-cream p-8 flex flex-col gap-4 border border-sand hover:-translate-y-1 transition-transform duration-300">
+            <div class="w-10 h-px bg-blush"></div>
+            <h3 class="font-display text-2xl font-[300] text-espresso">{svc.name}</h3>
+            <p class="text-sm leading-relaxed text-espresso/70 font-[300]">{svc.description}</p>
+            <div class="flex items-center gap-4 text-xs text-espresso/50 tracking-widest uppercase">
+              <span>{svc.duration} min</span>
+              <span>·</span>
+              <span class="text-blush font-medium">{svc.priceDisplay}</span>
+            </div>
+            <a
+              href={`/book/?service=${svc.slug}`}
+              class="mt-auto inline-flex items-center gap-2 text-blush text-xs tracking-[0.2em] uppercase font-[500] hover:gap-4 transition-all duration-200"
+            >
+              Book Now →
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+</Layout>

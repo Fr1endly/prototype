@@ -1,7 +1,7 @@
 ---
 interface Props {
   title: string;
-  activePage: 'home' | 'about' | 'faq' | 'resources';
+  activePage: 'home' | 'about' | 'faq' | 'resources' | 'book' | 'classes';
 }
 
 const { title, activePage } = Astro.props;
@@ -9,8 +9,10 @@ const { title, activePage } = Astro.props;
 const navItems = [
   { label: 'Home',             href: '/',          key: 'home' },
   { label: 'About',            href: '/about/',    key: 'about' },
-  { label: 'FAQ',              href: '/#faq',      key: 'faq' },
-  { label: 'Online Resources', href: '/#resources', key: 'resources' },
+  { label: 'Classes',          href: '/classes/',  key: 'classes' },
+  { label: 'Book Now',         href: '/book/',     key: 'book' },
+  // { label: 'FAQ',              href: '/#faq',      key: 'faq' },
+  // { label: 'Online Resources', href: '/#resources', key: 'resources' },
 ] as const;
 ---
 
