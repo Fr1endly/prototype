@@ -2,7 +2,7 @@ export const prerender = false;
 
 import type { APIRoute } from 'astro';
 
-export const GET: APIRoute = async ({ url }) => {
+export const GET: APIRoute = async ({ url, locals }) => {
   const eventTypeId = url.searchParams.get('eventTypeId');
   const start = url.searchParams.get('start');
   const end = url.searchParams.get('end');
@@ -15,7 +15,8 @@ export const GET: APIRoute = async ({ url }) => {
     );
   }
 
-  const apiKey = import.meta.env.CALCOM_API_KEY;
+  const runtime = (locals as any).runtime;
+  const apiKey = runtime?.env?.CALCOM_API_KEY ?? import.meta.env.CALCOM_API_KEY;
   if (!apiKey) {
     return new Response(
       JSON.stringify({ error: 'Cal.com API key not configured' }),

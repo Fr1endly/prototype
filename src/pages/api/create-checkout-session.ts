@@ -3,8 +3,9 @@ export const prerender = false;
 import type { APIRoute } from 'astro';
 import Stripe from 'stripe';
 
-export const POST: APIRoute = async ({ request, url }) => {
-  const stripe = new Stripe(import.meta.env.STRIPE_SECRET_KEY);
+export const POST: APIRoute = async ({ request, url, locals }) => {
+  const runtime = (locals as any).runtime;
+  const stripe = new Stripe(runtime?.env?.STRIPE_SECRET_KEY ?? import.meta.env.STRIPE_SECRET_KEY);
 
   let body: {
     stripePriceId: string;

@@ -3,9 +3,10 @@ export const prerender = false;
 import type { APIRoute } from 'astro';
 import Stripe from 'stripe';
 
-export const POST: APIRoute = async ({ request }) => {
-  const stripe = new Stripe(import.meta.env.STRIPE_SECRET_KEY);
-  const webhookSecret = import.meta.env.STRIPE_WEBHOOK_SECRET;
+export const POST: APIRoute = async ({ request, locals }) => {
+  const runtime = (locals as any).runtime;
+  const stripe = new Stripe(runtime?.env?.STRIPE_SECRET_KEY ?? import.meta.env.STRIPE_SECRET_KEY);
+  const webhookSecret = runtime?.env?.STRIPE_WEBHOOK_SECRET ?? import.meta.env.STRIPE_WEBHOOK_SECRET;
 
   const signature = request.headers.get('stripe-signature');
   if (!signature || !webhookSecret) {
@@ -32,7 +33,7 @@ export const POST: APIRoute = async ({ request }) => {
       return new Response('Missing booking metadata', { status: 400 });
     }
 
-    const calApiKey = import.meta.env.CALCOM_API_KEY;
+    const calApiKey = runtime?.env?.CALCOM_API_KEY ?? import.meta.env.CALCOM_API_KEY;
     if (!calApiKey) {
       console.error('CALCOM_API_KEY not configured');
       return new Response('Cal.com API key not configured', { status: 500 });
