@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+
+const resources = [
+  {
+    title: 'Breastfeeding Videos',
+    href: 'https://globalhealthmedia.org',
+    domain: 'Globalhealthmedia.org',
+  },
+  {
+    title: 'Women’s Health',
+    href: 'https://www.womenshealth.gov',
+    domain: 'Womenshealth.gov',
+  },
+  {
+    title: 'Breastfeeding and Parenting',
+    href: 'https://kellymom.com',
+    domain: 'Kellymom.com',
+  },
+  {
+    title: 'Mother’s Milk and Medications',
+    href: 'https://infantrisk.com',
+    domain: 'Infantrisk.com',
+  },
+];
+---
+
+<Layout title="Online Resources | Inspirit Lactation" activePage="resources">
+
+  <!-- ───── PAGE HERO ───── -->
+  <section class="bg-sand/40 border-b border-sand">
+    <div class="max-w-5xl mx-auto px-6 py-16 text-center">
+      <p class="font-body text-xs tracking-[0.35em] uppercase text-sage mb-3 reveal visible">
+        Evidence-based support
+      </p>
+      <h1 class="font-display text-5xl md:text-6xl font-[300] text-espresso reveal visible" style="transition-delay:0.1s">
+        Reliable Online <span class="italic text-blush">Resources</span>
+      </h1>
+      <p class="mt-4 font-display italic text-lg text-espresso/50 font-[300] reveal visible" style="transition-delay:0.2s">
+        Trusted information for your breastfeeding journey
+      </p>
+    </div>
+  </section>
+
+  <!-- ───── RESOURCES ───── -->
+  <section class="max-w-5xl mx-auto px-6 py-20">
+    <div class="leaf-divider mb-10 reveal">
+      <span class="font-display italic text-sage text-lg">resources</span>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      {resources.map((resource) => (
+        <a
+          href={resource.href}
+          target="_blank"
+          rel="noopener"
+          class="reveal bg-mist/40 p-8 flex flex-col gap-4 hover:-translate-y-1 transition-transform duration-300"
+        >
+          <div class="w-10 h-px bg-sage"></div>
+          <h2 class="font-display text-2xl md:text-3xl font-[300] text-espresso">
+            {resource.title}
+          </h2>
+          <p class="text-sm tracking-[0.18em] uppercase text-blush font-[500]">
+            {resource.domain}
+          </p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+</Layout>

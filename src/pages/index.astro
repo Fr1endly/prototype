@@ -1,183 +1,269 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import '../styles/global.css';
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
 ---
 
 <Layout title="Home | Inspirit Lactation" activePage="home">
-
-  <!-- ───── HERO ───── -->
-  <section class="relative grain overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-b from-sand/60 to-cream/80 z-[2]"></div>
-    <img
-      src="https://static.wixstatic.com/media/f59e733be2ad4b32b1de8eaeaf8f1d1c.jpg/v1/fill/w_1200,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/f59e733be2ad4b32b1de8eaeaf8f1d1c.jpg"
-      alt="Mother and Baby in Autumn"
-      class="w-full h-[520px] md:h-[620px] object-cover"
-    />
-    <div class="absolute inset-0 z-[3] flex flex-col items-center justify-center text-center px-6">
-      <p class="font-body text-xs tracking-[0.35em] uppercase text-sage mb-4 reveal visible" style="animation-delay:0s">
-        Welcome to
-      </p>
-      <h1 class="font-display text-5xl md:text-7xl font-[300] text-espresso leading-tight tracking-wide reveal visible" style="animation-delay:0.15s">
-        Inspirit Lactation
-      </h1>
-      <p class="mt-4 text-sm font-body text-espresso/50 italic font-[300] reveal visible" style="animation-delay:0.3s">
-        (website in progress)
-      </p>
-      <div class="mt-8 flex flex-wrap items-center justify-center gap-4 reveal visible" style="animation-delay:0.45s">
-        <a href="/book/" class="inline-block border border-blush text-blush text-xs tracking-[0.25em] uppercase px-8 py-3 hover:bg-blush hover:text-cream transition-all duration-300">
-          Learn More
-        </a>
-        <a
-          href="/book/"
-          class="cursor-pointer inline-block bg-blush text-cream text-xs tracking-[0.25em] uppercase px-8 py-3 border border-blush hover:bg-transparent hover:text-blush transition-all duration-300"
+    <!-- ───── HERO ───── -->
+    <section class="relative grain overflow-hidden">
+        <div
+            class="absolute inset-0 bg-gradient-to-b from-sand/60 to-cream/80 z-[2]"
         >
-          Book Appointment
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ───── SERVICES ───── -->
-  <section id="services" class="max-w-5xl mx-auto px-6 py-20">
-    <div class="leaf-divider mb-10 reveal">
-      <span class="font-display italic text-sage text-lg">our services</span>
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div class="reveal">
-        <h2 class="font-display text-3xl md:text-4xl font-[300] mb-6 leading-snug">
-          Inspirit Lactation<br/>
-          <span class="italic text-blush">Services</span>
-        </h2>
-        <p class="text-sm leading-relaxed text-espresso/75 font-[300] mb-5">
-          Mary See, IBCLC has been working with breastfeeding couples since 2007 and is honored to support and encourage you and your breastfeeding journey.
-        </p>
-        <p class="text-sm leading-relaxed text-espresso/75 font-[300] mb-6">
-          Home visits in Smyrna GA or HIPAA compliant virtual visits available. Most insurance companies will cover 100% of consult fees.
-        </p>
-        <a
-          href="https://go.lactationnetwork.com/MarySeeIBCLCCLE"
-          target="_blank"
-          rel="noopener"
-          class="inline-block bg-sage text-cream text-xs tracking-[0.2em] uppercase px-7 py-3 hover:bg-espresso transition-colors duration-300"
-        >
-          Check Your Coverage
-        </a>
-      </div>
-      <div class="reveal">
+        </div>
         <img
-          src="https://static.wixstatic.com/media/e14a9c2d8fe94ef3bde3f9838fd11c61.jpg/v1/fill/w_600,h_420,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/e14a9c2d8fe94ef3bde3f9838fd11c61.jpg"
-          alt="Hand on Bump"
-          class="w-full h-72 md:h-96 object-cover shadow-md"
+            src="https://static.wixstatic.com/media/f59e733be2ad4b32b1de8eaeaf8f1d1c.jpg/v1/fill/w_1200,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/f59e733be2ad4b32b1de8eaeaf8f1d1c.jpg"
+            alt="Mother and Baby in Autumn"
+            class="w-full h-[520px] md:h-[620px] object-cover"
         />
-      </div>
-    </div>
-  </section>
-
-  <!-- ───── ONLINE CLASSES ───── -->
-  <section class="bg-sand/50">
-    <div class="max-w-5xl mx-auto px-6 py-20">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="order-2 md:order-1 reveal">
-          <p class="font-body text-xs tracking-[0.3em] uppercase text-sage mb-3">Empower yourself with knowledge</p>
-          <h2 class="font-display text-3xl md:text-4xl font-[300] italic mb-6 text-espresso">
-            Online Classes
-          </h2>
-          <p class="text-sm leading-relaxed text-espresso/70 font-[300] mb-4">
-            Although breastfeeding is a natural process it doesn't always come naturally. With the common modern day practice of birthing interventions, breastfeeding can present quite challenging in the first few days.
-          </p>
-          <p class="text-sm leading-relaxed text-espresso/70 font-[300] mb-6">
-            Feel prepared with obstacles you may face. Arm yourself with an understanding of how lactation works and common hospital practice. These online classes are best taken prenatally but can be taken anytime along your breastfeeding journey.
-          </p>
-          <a href="/classes/" class="inline-block border border-espresso text-espresso text-xs tracking-[0.2em] uppercase px-7 py-3 hover:bg-espresso hover:text-cream transition-all duration-300">
-            Browse Classes
-          </a>
-        </div>
-        <div class="order-1 md:order-2 reveal">
-          <img
-            src="https://static.wixstatic.com/media/b4a0c97307b54ee5987f802570e062aa.jpg/v1/fill/w_600,h_420,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/b4a0c97307b54ee5987f802570e062aa.jpg"
-            alt="Siblings"
-            class="w-full h-72 md:h-96 object-cover shadow-md"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ───── FREE RESOURCES + AFFILIATE ───── -->
-  <section id="resources" class="max-w-5xl mx-auto px-6 py-20">
-    <div class="leaf-divider mb-12 reveal">
-      <span class="font-display italic text-sage text-lg">resources</span>
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-8">
-      <!-- Free Resources -->
-      <div class="reveal bg-mist/40 p-10 flex flex-col gap-4 hover:-translate-y-1 transition-transform duration-300">
-        <div class="w-10 h-px bg-sage"></div>
-        <h3 class="font-display text-2xl md:text-3xl font-[300]">
-          Free Resources
-        </h3>
-        <p class="text-sm leading-relaxed text-espresso/70 font-[300]">
-          There is so much misinformation offered on the internet. Find free and evidence-based information on the resource page.
-        </p>
-        <a href="#" class="mt-auto inline-flex items-center gap-2 text-blush text-xs tracking-[0.2em] uppercase font-[500] hover:gap-4 transition-all duration-200">
-          Explore →
-        </a>
-      </div>
-
-      <!-- Affiliate Products -->
-      <div class="reveal bg-sand/60 p-10 flex flex-col gap-4 hover:-translate-y-1 transition-transform duration-300">
-        <div class="w-10 h-px bg-blush"></div>
-        <h3 class="font-display text-2xl md:text-3xl font-[300]">
-          Affiliate Products
-        </h3>
-        <p class="text-sm leading-relaxed text-espresso/70 font-[300]">
-          Find links to IBCLC approved products that may support your breastfeeding experience.
-        </p>
-        <a href="#" class="mt-auto inline-flex items-center gap-2 text-blush text-xs tracking-[0.2em] uppercase font-[500] hover:gap-4 transition-all duration-200">
-          Shop Now →
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ───── CONTACT ───── -->
-  <section class="relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-sand to-mist z-0"></div>
-    <div class="relative z-10 max-w-5xl mx-auto px-6 py-20">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="reveal">
-          <img
-            src="https://static.wixstatic.com/media/11062b_5639cd56108d4006aba2cc3eaf79d0f2~mv2_d_6746_4502_s_4_2.jpg/v1/fill/w_600,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_5639cd56108d4006aba2cc3eaf79d0f2~mv2_d_6746_4502_s_4_2.jpg"
-            alt="Happy Children"
-            class="w-full h-72 md:h-96 object-cover shadow-lg"
-          />
-        </div>
-        <div class="reveal flex flex-col gap-6">
-          <h2 class="font-display text-3xl md:text-4xl font-[300] text-espresso">
-            Contact <span class="italic text-blush">Me</span>
-          </h2>
-          <p class="text-sm leading-relaxed text-espresso/70 font-[300]">
-            We work together to overcome whatever breastfeeding challenges you may face.
-          </p>
-          <div class="flex items-center gap-3">
-            <div class="w-8 h-8 rounded-full bg-blush/20 flex items-center justify-center flex-shrink-0">
-              <svg class="w-4 h-4 text-blush" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-              </svg>
-            </div>
-            <a href="mailto:love@maryseeibclc.com" class="text-sm text-blush hover:underline font-[400] tracking-wide">
-              love@maryseeibclc.com
-            </a>
-          </div>
-          <blockquote class="border-l-2 border-blush pl-5 mt-4">
-            <p class="font-display text-2xl italic font-[300] text-espresso/80">
-              "You can do this!"
+        <div
+            class="absolute inset-0 z-[3] flex flex-col items-center justify-center text-center px-6"
+        >
+            <p
+                class="font-body text-xs tracking-[0.35em] uppercase text-sage mb-4 reveal visible"
+                style="animation-delay:0s"
+            >
+                Welcome to
             </p>
-          </blockquote>
+            <h1
+                class="font-display text-5xl md:text-7xl font-[300] text-espresso leading-tight tracking-wide reveal visible"
+                style="animation-delay:0.15s"
+            >
+                Inspirit Lactation
+            </h1>
+            <p
+                class="mt-4 text-sm font-body text-espresso/50 italic font-[300] reveal visible"
+                style="animation-delay:0.3s"
+            >
+                (website in progress)
+            </p>
+            <div
+                class="mt-8 flex flex-wrap items-center justify-center gap-4 reveal visible"
+                style="animation-delay:0.45s"
+            >
+                <a
+                    href="/about/"
+                    class="inline-block border border-blush text-blush text-xs tracking-[0.25em] uppercase px-8 py-3 hover:bg-blush hover:text-cream transition-all duration-300"
+                >
+                    Learn More
+                </a>
+                <a
+                    href="/book/"
+                    class="cursor-pointer inline-block bg-blush text-cream text-xs tracking-[0.25em] uppercase px-8 py-3 border border-blush hover:bg-transparent hover:text-blush transition-all duration-300"
+                >
+                    Book Appointment
+                </a>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- ───── SERVICES ───── -->
+    <section id="services" class="max-w-5xl mx-auto px-6 py-20">
+        <div class="leaf-divider mb-10 reveal">
+            <span class="font-display italic text-sage text-lg"
+                >our services</span
+            >
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="reveal">
+                <h2
+                    class="font-display text-3xl md:text-4xl font-[300] mb-6 leading-snug"
+                >
+                    Inspirit Lactation<br />
+                    <span class="italic text-blush">Services</span>
+                </h2>
+                <p
+                    class="text-sm leading-relaxed text-espresso/75 font-[300] mb-5"
+                >
+                    Mary See, IBCLC has been working with breastfeeding couples
+                    since 2007 and is honored to support and encourage you and
+                    your breastfeeding journey.
+                </p>
+                <p
+                    class="text-sm leading-relaxed text-espresso/75 font-[300] mb-6"
+                >
+                    Home visits in Smyrna GA or HIPAA compliant virtual visits
+                    available. Most insurance companies will cover 100% of
+                    consult fees.
+                </p>
+                <a
+                    href="https://go.lactationnetwork.com/MarySeeIBCLCCLE"
+                    target="_blank"
+                    rel="noopener"
+                    class="inline-block bg-sage text-cream text-xs tracking-[0.2em] uppercase px-7 py-3 hover:bg-espresso transition-colors duration-300"
+                >
+                    Check Your Coverage
+                </a>
+            </div>
+            <div class="reveal">
+                <img
+                    src="https://static.wixstatic.com/media/e14a9c2d8fe94ef3bde3f9838fd11c61.jpg/v1/fill/w_600,h_420,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/e14a9c2d8fe94ef3bde3f9838fd11c61.jpg"
+                    alt="Hand on Bump"
+                    class="w-full h-72 md:h-96 object-cover shadow-md"
+                />
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── ONLINE CLASSES ───── -->
+    <section class="bg-sand/50">
+        <div class="max-w-5xl mx-auto px-6 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1 reveal">
+                    <p
+                        class="font-body text-xs tracking-[0.3em] uppercase text-sage mb-3"
+                    >
+                        Empower yourself with knowledge
+                    </p>
+                    <h2
+                        class="font-display text-3xl md:text-4xl font-[300] italic mb-6 text-espresso"
+                    >
+                        Online Classes
+                    </h2>
+                    <p
+                        class="text-sm leading-relaxed text-espresso/70 font-[300] mb-4"
+                    >
+                        Although breastfeeding is a natural process it doesn't
+                        always come naturally. With the common modern day
+                        practice of birthing interventions, breastfeeding can
+                        present quite challenging in the first few days.
+                    </p>
+                    <p
+                        class="text-sm leading-relaxed text-espresso/70 font-[300] mb-6"
+                    >
+                        Feel prepared with obstacles you may face. Arm yourself
+                        with an understanding of how lactation works and common
+                        hospital practice. These online classes are best taken
+                        prenatally but can be taken anytime along your
+                        breastfeeding journey.
+                    </p>
+                    <a
+                        href="/classes/"
+                        class="inline-block border border-espresso text-espresso text-xs tracking-[0.2em] uppercase px-7 py-3 hover:bg-espresso hover:text-cream transition-all duration-300"
+                    >
+                        Browse Classes
+                    </a>
+                </div>
+                <div class="order-1 md:order-2 reveal">
+                    <img
+                        src="https://static.wixstatic.com/media/b4a0c97307b54ee5987f802570e062aa.jpg/v1/fill/w_600,h_420,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/b4a0c97307b54ee5987f802570e062aa.jpg"
+                        alt="Siblings"
+                        class="w-full h-72 md:h-96 object-cover shadow-md"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── FREE RESOURCES + AFFILIATE ───── -->
+    <section id="resources" class="max-w-5xl mx-auto px-6 py-20">
+        <div class="leaf-divider mb-12 reveal">
+            <span class="font-display italic text-sage text-lg">resources</span>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Free Resources -->
+            <div
+                class="reveal bg-mist/40 p-10 flex flex-col gap-4 hover:-translate-y-1 transition-transform duration-300"
+            >
+                <div class="w-10 h-px bg-sage"></div>
+                <h3 class="font-display text-2xl md:text-3xl font-[300]">
+                    Free Resources
+                </h3>
+                <p class="text-sm leading-relaxed text-espresso/70 font-[300]">
+                    There is so much misinformation offered on the internet.
+                    Find free and evidence-based information on the resource
+                    page.
+                </p>
+                <a
+                    href="/online-resources/"
+                    class="mt-auto inline-flex items-center gap-2 text-blush text-xs tracking-[0.2em] uppercase font-[500] hover:gap-4 transition-all duration-200"
+                >
+                    Explore →
+                </a>
+            </div>
+
+            <!-- Affiliate Products -->
+            <div
+                class="reveal bg-sand/60 p-10 flex flex-col gap-4 hover:-translate-y-1 transition-transform duration-300"
+            >
+                <div class="w-10 h-px bg-blush"></div>
+                <h3 class="font-display text-2xl md:text-3xl font-[300]">
+                    Affiliate Products
+                </h3>
+                <p class="text-sm leading-relaxed text-espresso/70 font-[300]">
+                    Find links to IBCLC approved products that may support your
+                    breastfeeding experience.
+                </p>
+                <a
+                    href="#"
+                    class="mt-auto inline-flex items-center gap-2 text-blush text-xs tracking-[0.2em] uppercase font-[500] hover:gap-4 transition-all duration-200"
+                >
+                    Shop Now →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── CONTACT ───── -->
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-sand to-mist z-0">
+        </div>
+        <div class="relative z-10 max-w-5xl mx-auto px-6 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="reveal">
+                    <img
+                        src="https://static.wixstatic.com/media/11062b_5639cd56108d4006aba2cc3eaf79d0f2~mv2_d_6746_4502_s_4_2.jpg/v1/fill/w_600,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_5639cd56108d4006aba2cc3eaf79d0f2~mv2_d_6746_4502_s_4_2.jpg"
+                        alt="Happy Children"
+                        class="w-full h-72 md:h-96 object-cover shadow-lg"
+                    />
+                </div>
+                <div class="reveal flex flex-col gap-6">
+                    <h2
+                        class="font-display text-3xl md:text-4xl font-[300] text-espresso"
+                    >
+                        Contact <span class="italic text-blush">Me</span>
+                    </h2>
+                    <p
+                        class="text-sm leading-relaxed text-espresso/70 font-[300]"
+                    >
+                        We work together to overcome whatever breastfeeding
+                        challenges you may face.
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-8 h-8 rounded-full bg-blush/20 flex items-center justify-center flex-shrink-0"
+                        >
+                            <svg
+                                class="w-4 h-4 text-blush"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <a
+                            href="mailto:love@maryseeibclc.com"
+                            class="text-sm text-blush hover:underline font-[400] tracking-wide"
+                        >
+                            love@maryseeibclc.com
+                        </a>
+                    </div>
+                    <blockquote class="border-l-2 border-blush pl-5 mt-4">
+                        <p
+                            class="font-display text-2xl italic font-[300] text-espresso/80"
+                        >
+                            "You can do this!"
+                        </p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
 </Layout>
